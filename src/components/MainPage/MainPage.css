@@ -69,6 +69,26 @@
     z-index: -1;
 }
 
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    opacity: 1;
+    animation: blink 0.8s infinite;
+}
+
+.cursor.visible {
+    opacity: 1;
+}
+
+.cursor {
+    opacity: 0;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
 @media (max-width: 899px) {
     .main-page__sticker {display: none;}
 }
