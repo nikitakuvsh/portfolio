@@ -1,7 +1,7 @@
 .stack__container {
-    background: linear-gradient(135deg, rgb(91, 46, 253), rgb(86, 5, 236), rgb(96, 63, 216));
+    background: linear-gradient(135deg, #6c63ff, #4137ff, #6d65ff);
     background-size: 300% 300%;
-    animation: gradient-animation 10s ease infinite;
+    animation: gradient-animation 5s ease infinite;
     padding: 2rem;
     position: relative;
 }
