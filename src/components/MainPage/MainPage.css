@@ -8,6 +8,7 @@
     height: 100vh;
     background: linear-gradient(135deg, #6c63ff, #3f3d56);
     color: white;
+    background-color: #6c63ff;
 }
 
 .main-page__hero {

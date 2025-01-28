@@ -6,12 +6,25 @@
     color: white;
 }
 
+.title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Расстояние между заголовком и стикером */
+    margin-bottom: 2rem;
+    margin-left: 5%;
+}
 
 .projects__title {
     font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: center; /* Это нужно, если заголовок будет переноситься на новую строку */
 }
+
+.projects__sticker {
+    width: 7rem;
+    height: auto; /* Сохраняем пропорции стикера */
+}
+
 
 .projects__grid {
     display: grid;
@@ -82,3 +95,7 @@
     color: #666;
 }
 
+@media (max-width: 700px) {
+    .projects__sticker {display: none;}
+    .title__container {margin-left: 0;}
+}

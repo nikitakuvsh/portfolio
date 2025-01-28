@@ -11,11 +11,13 @@ import dockerIcon from '../../images/stackicons/docker.svg';
 import postgresIcon from '../../images/stackicons/postgre.svg';
 import linuxIcon from '../../images/stackicons/linux.svg';
 import githubIcon from '../../images/stackicons/github.svg';
+import thinkingSticker from '../../images/stickers/thinking.webp';
 
 export default function MyStack(){
     return (
         <div className='stack__container'>
             <h2 className='stack__title'>Мой стек технологий:</h2>
+            <img className='stack__sticker' src={thinkingSticker}></img>
             <div className='stack__blocks'>
                 <div className='stack'><img className='stack__image' alt='HTML' title='HTML' src={htmlIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='CSS' title='CSS' src={cssIcon}></img></div>

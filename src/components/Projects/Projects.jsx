@@ -1,13 +1,17 @@
 import './Projects.css';
 import projectsData from './projects_data.json';
 import { useNavigate } from 'react-router-dom';
+import workSticker from '../../images/stickers/notebook.webp';
 
 export default function Projects() {
     const navigate = useNavigate();
 
     return (
         <div className="projects">
-            <h2 className="projects__title">Мои работы</h2>
+            <div className='title__container'>
+                <h2 className="projects__title">Мои работы</h2>
+                <img className='projects__sticker' src={workSticker}></img>
+            </div>
             <div className="projects__grid">
                 {projectsData.map(project => (
                     <div key={project.id} className="project-card" onClick={() => navigate(`projects/${project.id}`)}>
