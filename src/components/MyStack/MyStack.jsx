@@ -10,6 +10,7 @@ import pythonIcon from '../../images/stackicons/python.svg';
 import dockerIcon from '../../images/stackicons/docker.svg';
 import postgresIcon from '../../images/stackicons/postgre.svg';
 import linuxIcon from '../../images/stackicons/linux.svg';
+import githubIcon from '../../images/stackicons/github.svg';
 
 export default function MyStack(){
     return (
@@ -27,6 +28,7 @@ export default function MyStack(){
                 <div className='stack'><img className='stack__image' alt='docker' title='docker' src={dockerIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='postgres' title='postgres' src={postgresIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='linux' title='linuxOS' src={linuxIcon}></img></div>
+                <div className='stack'><img className='stack__image' alt='github' title='github' src={githubIcon}></img></div>
             </div>
         </div>
     );
