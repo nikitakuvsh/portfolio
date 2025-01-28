@@ -21,7 +21,7 @@
 .stack__sticker {
     width: 15rem;
     position: absolute;
-    right: -20px;
+    right: -30px;
     bottom: -20%;
     transform: rotate(15deg);
 }
@@ -36,16 +36,22 @@
 
 .stack__blocks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 3rem;
-    padding: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
+.stack {
+    display: flex;
+    justify-content: center;
+    /* z-index: 10; */
+}
 
 .stack__image {
     width: 6.5rem;

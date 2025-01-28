@@ -11,6 +11,8 @@ import dockerIcon from '../../images/stackicons/docker.svg';
 import postgresIcon from '../../images/stackicons/postgre.svg';
 import linuxIcon from '../../images/stackicons/linux.svg';
 import githubIcon from '../../images/stackicons/github.svg';
+import figmaIcon from '../../images/stackicons/figma.svg';
+import photoshopIcon from '../../images/stackicons/photoshop.svg';
 import thinkingSticker from '../../images/stickers/thinking.webp';
 
 export default function MyStack(){
@@ -31,6 +33,8 @@ export default function MyStack(){
                 <div className='stack'><img className='stack__image' alt='postgres' title='postgres' src={postgresIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='linux' title='linuxOS' src={linuxIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='github' title='github' src={githubIcon}></img></div>
+                <div className='stack'><img className='stack__image' alt='figma' title='Figma' src={figmaIcon}></img></div>
+                <div className='stack'><img className='stack__image' alt='photoshop' title='Photoshop' src={photoshopIcon}></img></div>
             </div>
         </div>
     );
