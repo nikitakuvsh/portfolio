@@ -1,0 +1,84 @@
+/* Projects.css */
+
+.projects {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #6c63ff, #3f3d56);
+    color: white;
+}
+
+
+.projects__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #6c63ff, #ff6584);
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Изначально скрыт */
+    z-index: -1; /* Чтобы не перекрывать содержимое карточки */
+}
+
+.project-card:hover::before {
+    opacity: 1; /* Плавно показываем градиент при наведении */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white; /* Меняем цвет текста для контраста */
+}
+
+
+.project-card__title,
+.project-card__description,
+.project-card__link {
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-card__title,
+.project-card:hover .project-card__description,
+.project-card:hover .project-card__link {
+    color: white; /* Устанавливаем цвет текста на белый для читабельности */
+}
+
+
+.project-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #6c63ff;
+}
+
+.project-card__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+

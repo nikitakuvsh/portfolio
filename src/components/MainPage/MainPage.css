@@ -1,0 +1,51 @@
+/* MainPage.css */
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6c63ff, #3f3d56);
+    color: white;
+}
+
+.main-page__hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero__content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero__button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero__button--primary {
+    background-color: #ff6584;
+    color: white;
+}
+
+.hero__button--primary:hover {
+    background-color: #ff4563;
+}
+
