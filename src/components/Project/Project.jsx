@@ -31,31 +31,11 @@ export default function Project() {
                 {/* Правая колонка */}
                 <div className="project__media">
                     <div className="project__video">
-                        <video autoPlay muted controls>
+                        <video autoPlay muted controls loop>
                             <source src={project.video} type="video/mp4"/>
                             Ваш браузер не поддерживает видео.
                         </video>
                     </div>
-
-                    {/* Слайдер с фотографиями */}
-                    <Swiper
-                        modules={[Navigation, Pagination]}
-                        spaceBetween={10}
-                        slidesPerView={3}
-                        navigation
-                        pagination={{ clickable: true }}
-                        className="project__slider"
-                        breakpoints={{
-                            640: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
-                        }}
-                    >
-                        {project.images.map((src, index) => (
-                            <SwiperSlide key={index}>
-                                <img src={src} alt={`Скриншот ${index + 1}`} />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
                 </div>
             </div>
         </div>
