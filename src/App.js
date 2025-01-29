@@ -5,6 +5,7 @@ import MainPage from "./components/MainPage/MainPage";
 import Projects from './components/Projects/Projects';
 import MyStack from './components/MyStack/MyStack';
 import AboutMe from './components/AboutMe/AboutMe';
+import Achievements from './components/Achievements/Achievements';
 import backgroundAnimations from './components/backgroundAnimations/backgroundAnimations';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <MainPage />
         <MyStack />
         <Projects />
+        <Achievements />
         <AboutMe />
       </div>
     </BrowserRouter>
