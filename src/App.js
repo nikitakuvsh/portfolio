@@ -4,6 +4,7 @@ import './main.css';
 import MainPage from "./components/MainPage/MainPage";
 import Projects from './components/Projects/Projects';
 import MyStack from './components/MyStack/MyStack';
+import AboutMe from './components/AboutMe/AboutMe';
 import backgroundAnimations from './components/backgroundAnimations/backgroundAnimations';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <MainPage />
         <MyStack />
         <Projects />
+        <AboutMe />
       </div>
     </BrowserRouter>
   );
