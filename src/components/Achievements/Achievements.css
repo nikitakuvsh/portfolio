@@ -26,7 +26,7 @@
 
 /* Карточка достижения */
 .achievements-card {
-    background: white;
+    background: rgba(255, 254, 254, 0.911);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
