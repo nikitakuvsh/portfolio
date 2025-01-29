@@ -24,6 +24,7 @@ function MainPage() {
 
     return (
         <div className="main-page">
+            
             {/* Hero Section */}
             <div className='main-page__sticker'>
                 <img className='main-page__sticker-image' src={meanIcon} alt="Sticker" />

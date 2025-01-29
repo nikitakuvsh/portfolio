@@ -17,9 +17,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <div className="animated-background">
+      <div className="animated-background">
           <canvas id="lines-canvas"></canvas>
-        </div>
+      </div>
         <Routes>
           <Route path="/" element={
             <>
@@ -30,7 +30,7 @@ function App() {
             <AboutMe />
             </>
           } />
-          <Route path="/projects/:project_id" element={<Project />} />
+          <Route path="/projects/:id" element={<Project />} />
         </Routes>
       </div>
     </BrowserRouter>
