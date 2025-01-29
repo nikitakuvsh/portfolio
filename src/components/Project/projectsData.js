@@ -1,13 +1,15 @@
+import soglasieVideo from '../../video/soglasievideo.mp4';
+import sertificatSoglasie from '../../images/achieve/soglasiesertificat.png';
+import test from '../../images/achieve/ficsertificat.png';
+
 const projectsData = [
     {
         id: 1,
-        title: "Проект 1",
-        description: "Описание проекта 1",
-        video: "video1.mp4",
+        title: "Создание информационной системы проверки страховых гипотез",
+        description: `Web-сервис для проверки гипотез. В условиях насыщенного рынка страховых услуг компании постоянно ищут новые способы привлечения клиентов. Для этого требуется оперативное тестирование различных гипотез и идей. Задача — разработать web-сервис, который позволит создавать и тестировать новые страховые продукты. Этот сервис должен помочь компаниям быстро проверять эффективность различных гипотез, создавая цифровые страховые продукты с минимальными затратами времени и ресурсов. Стек технологий — не ограничен.`,
+        video: soglasieVideo,
         images: [
-            "image.jpg",
-            "image1-2.jpg",
-            "image1-3.jpg"
+            sertificatSoglasie,
         ]
     },
     {

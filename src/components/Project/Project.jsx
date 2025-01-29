@@ -11,7 +11,7 @@ export default function Project() {
     const { id } = useParams(); 
     const project = projectsData.find(p => p.id === parseInt(id, 10)); // 🛠 Приводим к числу
     console.log("id из URL:", id);
-console.log("Список проектов:", projectsData);
+    console.log("Список проектов:", projectsData);
 
 
 
@@ -31,8 +31,8 @@ console.log("Список проектов:", projectsData);
                 {/* Правая колонка */}
                 <div className="project__media">
                     <div className="project__video">
-                        <video controls>
-                            <source src={project.video} type="video/mp4" />
+                        <video autoPlay muted controls>
+                            <source src={project.video} type="video/mp4"/>
                             Ваш браузер не поддерживает видео.
                         </video>
                     </div>
