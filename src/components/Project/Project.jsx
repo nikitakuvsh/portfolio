@@ -1,23 +1,37 @@
-import { useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import projectsData from "./projectsData"; // Импорт массива
+import { useParams, useNavigate } from "react-router-dom";
+import projectsData from "./projectsData";
 import "./Project.css";
 
 export default function Project() {
     const { id } = useParams(); 
-    const project = projectsData.find(p => p.id === parseInt(id, 10)); // 🛠 Приводим к числу
-    console.log("id из URL:", id);
-    console.log("Список проектов:", projectsData);
-
-
+    const navigate = useNavigate();
+    
+    const currentId = parseInt(id, 10);
+    const project = projectsData.find(p => p.id === currentId);
 
     if (!project) {
         return <div className="project__container">Проект не найден</div>;
     }
+
+    // Определяем, можно ли перейти на следующий / предыдущий проект
+    const canClickNext = currentId < projectsData.length;
+    const canClickPrev = currentId > 1;
+
+    // Функция перехода на следующий проект
+    const nextProject = () => {
+        if (canClickNext) {
+            navigate(`/projects/${currentId + 1}`);
+            window.location.reload();
+        }
+    };
+
+    // Функция перехода на предыдущий проект
+    const prevProject = () => {
+        if (canClickPrev) {
+            navigate(`/projects/${currentId - 1}`);
+            window.location.reload();
+        }
+    };
 
     return (
         <div className="project__container">
@@ -26,6 +40,7 @@ export default function Project() {
                 <div className="project__info">
                     <h1 className="project__title">{project.title}</h1>
                     <p className="project__description">{project.description}</p>
+                    <button className="project__button project__button--fix" onClick={() => navigate('/')}>Назад</button>
                 </div>
 
                 {/* Правая колонка */}
@@ -35,6 +50,22 @@ export default function Project() {
                             <source src={project.video} type="video/mp4"/>
                             Ваш браузер не поддерживает видео.
                         </video>
+                    </div>
+                    <div className="project__buttons-container">
+                        <button 
+                            className={`project__button ${canClickPrev ? 'project__button--active' : 'project__button--deactive'}`} 
+                            onClick={prevProject}
+                            disabled={!canClickPrev}
+                        >
+                            Предыдущий проект
+                        </button>
+                        <button 
+                            className={`project__button ${canClickNext ? 'project__button--active' : 'project__button--deactive'}`} 
+                            onClick={nextProject}
+                            disabled={!canClickNext}
+                        >
+                            Следующий проект
+                        </button>
                     </div>
                 </div>
             </div>
