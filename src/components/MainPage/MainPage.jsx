@@ -46,7 +46,7 @@ function MainPage() {
                         Frontend-focused FullStack Developer <br />
                         React Enthusiast | CSS Magician
                     </p>
-                    <a href="#" className="hero__button hero__button--primary">Узнать больше</a>
+                    <a href="#mystack" className="hero__button hero__button--primary">Узнать больше</a>
                 </div>
             </section>
         </div>

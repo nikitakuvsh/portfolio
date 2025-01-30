@@ -124,6 +124,10 @@
     padding: 1.5%;
 }
 
+.project__button--link {
+    color: white;
+    text-decoration: none;
+}
 
 /* Адаптивность */
 @media (max-width: 770px) {

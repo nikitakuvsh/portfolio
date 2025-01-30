@@ -17,7 +17,7 @@ import thinkingSticker from '../../images/stickers/thinking.webp';
 
 export default function MyStack(){
     return (
-        <div className='stack__container'>
+        <div className='stack__container' id='mystack'>
             <h2 className='stack__title'>Мой стек технологий:</h2>
             <img className='stack__sticker' src={thinkingSticker}></img>
             <div className='stack__blocks'>

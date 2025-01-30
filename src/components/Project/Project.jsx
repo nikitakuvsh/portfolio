@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import projectsData from "./projectsData";
 import "./Project.css";
 
@@ -48,7 +49,7 @@ export default function Project() {
                 </div>
 
                 <div className="project__buttons-container">
-                    <button className="project__button project__button--fix" onClick={() => navigate('/')}>Назад</button>
+                    <button className="project__button project__button--fix" onClick={() => {navigate('/'); setTimeout(() => { const target = document.getElementById("myprojects"); if (target) {target.scrollIntoView({ behavior: "smooth" });}}, 100);}}>Назад</button>
                     <div className="project__nav-buttons">
                         <button className={`project__button ${canClickPrev ? 'project__button--active' : 'project__button--deactive'}`} onClick={prevProject} disabled={!canClickPrev}>Предыдущий проект</button>
                         <button className={`project__button ${canClickNext ? 'project__button--active' : 'project__button--deactive'}`} onClick={nextProject} disabled={!canClickNext}>Следующий проект</button>

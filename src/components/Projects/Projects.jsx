@@ -7,7 +7,7 @@ export default function Projects() {
     const navigate = useNavigate();
 
     return (
-        <div className="projects">
+        <div className="projects" id='myprojects'>
             <div className='title__container'>
                 <h2 className="projects__title">Мои работы</h2>
                 <img className='projects__sticker' src={workSticker}></img>
