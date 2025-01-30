@@ -43,8 +43,8 @@ function MainPage() {
                         <span className={`cursor ${cursorVisible ? 'visible' : ''}`}>|</span>
                     </h1>
                     <p className="hero__subtitle">
-                        Frontend-focused FullStack Developer <br />
-                        React Enthusiast | CSS Magician
+                        Frontend-focused FullStack Developer <br /><br />
+                        Разработка PixelPerfect сайтов под ключ
                     </p>
                     <button className="hero__button hero__button--primary" onClick={(e) => { e.preventDefault(); const target = document.getElementById("mystack");if (target) {target.scrollIntoView({ behavior: "smooth" });}}}>Узнать больше</button>
                 </div>
