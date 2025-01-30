@@ -43,7 +43,7 @@ function MainPage() {
                         <span className={`cursor ${cursorVisible ? 'visible' : ''}`}>|</span>
                     </h1>
                     <p className="hero__subtitle">
-                        Frontend-focus FullStack Developer <br />
+                        Frontend-focused FullStack Developer <br />
                         React Enthusiast | CSS Magician
                     </p>
                     <a href="#" className="hero__button hero__button--primary">Узнать больше</a>
