@@ -80,10 +80,16 @@
 
 .project__buttons-container {
     display: flex;
-    justify-content: center; /* Центрирует кнопки по горизонтали */
-    gap: 3rem;
-    margin-top: 1rem;
+    justify-content: space-between; /* "Назад" слева, остальные кнопки справа */
     align-items: center;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.project__nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .project__button {
@@ -96,6 +102,7 @@
     font-size: 1.5rem;
     transition: background-color 0.5s ease-in-out;
     text-align: center;
+    display: flex;
 }
 
 .project__button--active {
@@ -107,19 +114,19 @@
     cursor: default;
 }
 
-.project__button--active:hover {
+.project__button--active:hover,
+.project__button--fix:hover {
     background-color: #474461;
 }
 
 .project__button--fix {
-    display: block;
-    margin-top: 1.5rem;
     background-color: #716d9e;
+    padding: 1.5%;
 }
 
 
 /* Адаптивность */
-@media (max-width: 48rem) {
+@media (max-width: 770px) {
     .project__content {justify-content: center;}
     .project__slider img {height: 5rem;}
     .project__video video {
@@ -134,5 +141,13 @@
     .project__description {
         max-height: max-content;
         overflow-y: hidden;
+    }
+
+    .project__buttons-container {
+        display: flex;
+        justify-content: center; /* "Назад" слева, остальные кнопки справа */
+        align-items: center;
+        width: 100%;
+        margin-top: 0.2rem;
     }
 }
