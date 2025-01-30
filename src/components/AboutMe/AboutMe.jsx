@@ -58,7 +58,7 @@ export default function AboutMe() {
             }, 3000);
         }
         return () => clearInterval(autoPlayRef.current);
-    }, [isAutoPlay]);
+    }, [isAutoPlay, images.length]);
 
     return (
         <div className="about-me__container">

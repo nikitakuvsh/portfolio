@@ -19,7 +19,7 @@ export default function MyStack(){
     return (
         <div className='stack__container' id='mystack'>
             <h2 className='stack__title'>Мой стек технологий:</h2>
-            <img className='stack__sticker' src={thinkingSticker}></img>
+            <img className='stack__sticker' src={thinkingSticker} alt='sticker'></img>
             <div className='stack__blocks'>
                 <div className='stack'><img className='stack__image' alt='HTML' title='HTML' src={htmlIcon}></img></div>
                 <div className='stack'><img className='stack__image' alt='CSS' title='CSS' src={cssIcon}></img></div>

@@ -10,7 +10,7 @@ export default function Projects() {
         <div className="projects" id='myprojects'>
             <div className='title__container'>
                 <h2 className="projects__title">Мои работы</h2>
-                <img className='projects__sticker' src={workSticker}></img>
+                <img className='projects__sticker' src={workSticker} alt='sticker'></img>
             </div>
             <div className="projects__grid">
                 {projectsData.map(project => (
