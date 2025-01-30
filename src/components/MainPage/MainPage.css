@@ -47,6 +47,7 @@
     font-weight: bold;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 .hero__button--primary {

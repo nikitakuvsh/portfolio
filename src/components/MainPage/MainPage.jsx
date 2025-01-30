@@ -46,7 +46,7 @@ function MainPage() {
                         Frontend-focused FullStack Developer <br />
                         React Enthusiast | CSS Magician
                     </p>
-                    <a href="#mystack" className="hero__button hero__button--primary">Узнать больше</a>
+                    <button className="hero__button hero__button--primary" onClick={(e) => { e.preventDefault(); const target = document.getElementById("mystack");if (target) {target.scrollIntoView({ behavior: "smooth" });}}}>Узнать больше</button>
                 </div>
             </section>
         </div>
