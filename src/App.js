@@ -7,6 +7,7 @@ import MyStack from './components/MyStack/MyStack';
 import AboutMe from './components/AboutMe/AboutMe';
 import Achievements from './components/Achievements/Achievements';
 import Project from './components/Project/Project';
+import ContactMe from './components/ContactMe/ContactMe';
 import backgroundAnimations from './components/backgroundAnimations/backgroundAnimations';
 
 function App() {
@@ -17,17 +18,18 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
-      <div className="animated-background">
+        <div className="animated-background">
           <canvas id="lines-canvas"></canvas>
-      </div>
+        </div>
         <Routes>
           <Route path="/" element={
             <>
-            <MainPage />
-            <MyStack />
-            <Projects />
-            <Achievements />
-            <AboutMe />
+              <MainPage />
+              <MyStack />
+              <Projects />
+              <Achievements />
+              <AboutMe />
+              <ContactMe />
             </>
           } />
           <Route path="/projects/:id" element={<Project />} />

@@ -1,0 +1,43 @@
+.contact-me__container {
+    background: linear-gradient(135deg, #6c65e7, #8a7df1);
+
+
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.contact-me__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-me__divider {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background: white;
+}
+
+.contact-me__info {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.contact-me__info a {
+    color: #71c9ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-me__info a:hover {
+    color: #47a6b1;
+}
+
+@media (max-width: 700px) {
+    .contact-me__title {font-size: 2rem;}
+    .contact-me__info {font-size: 1rem;}
+}
