@@ -1,10 +1,9 @@
 .contact-me__container {
     background: linear-gradient(135deg, #6c65e7, #8a7df1);
-
-
     color: white;
     text-align: center;
     padding: 2rem 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact-me__title {
