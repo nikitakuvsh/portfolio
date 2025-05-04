@@ -15,41 +15,41 @@ function App() {
     backgroundAnimations();
   }, []);
 
-  useEffect(() => {
-    let scrollTarget = window.scrollY;
-    let isScrolling = false;
-    let easeFactor = 0.02; // Чем меньше, тем плавнее
+  // useEffect(() => {
+  //   let scrollTarget = window.scrollY;
+  //   let isScrolling = false;
+  //   let easeFactor = 0.02; // Чем меньше, тем плавнее
 
-    const handleWheel = (event) => {
-      event.preventDefault();
+  //   const handleWheel = (event) => {
+  //     event.preventDefault();
 
-      scrollTarget += event.deltaY * 1.5; // Меньший коэффициент ускорения для мягкости
-      scrollTarget = Math.max(0, Math.min(scrollTarget, document.body.scrollHeight - window.innerHeight));
+  //     scrollTarget += event.deltaY * 1.5; // Меньший коэффициент ускорения для мягкости
+  //     scrollTarget = Math.max(0, Math.min(scrollTarget, document.body.scrollHeight - window.innerHeight));
 
-      if (!isScrolling) {
-        isScrolling = true;
-        smoothScroll();
-      }
-    };
+  //     if (!isScrolling) {
+  //       isScrolling = true;
+  //       smoothScroll();
+  //     }
+  //   };
 
-    const smoothScroll = () => {
-      const currentScroll = window.scrollY;
-      const distance = scrollTarget - currentScroll;
+  //   const smoothScroll = () => {
+  //     const currentScroll = window.scrollY;
+  //     const distance = scrollTarget - currentScroll;
 
-      if (Math.abs(distance) > 0.5) {
-        window.scrollTo(0, currentScroll + distance * easeFactor);
-        requestAnimationFrame(smoothScroll);
-      } else {
-        isScrolling = false;
-      }
-    };
+  //     if (Math.abs(distance) > 0.5) {
+  //       window.scrollTo(0, currentScroll + distance * easeFactor);
+  //       requestAnimationFrame(smoothScroll);
+  //     } else {
+  //       isScrolling = false;
+  //     }
+  //   };
 
-    window.addEventListener("wheel", handleWheel, { passive: false });
+  //   window.addEventListener("wheel", handleWheel, { passive: false });
 
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("wheel", handleWheel);
+  //   };
+  // }, []);
 
   return (
     <BrowserRouter>
