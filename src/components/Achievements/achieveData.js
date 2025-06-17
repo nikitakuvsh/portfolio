@@ -1,5 +1,6 @@
 import soglasiesertificat from '../../images/achieve/soglasiesertificat.png';
 import ficsertificat from '../../images/achieve/ficsertificat.png';
+import vnedreidsertificat from '../../images/achieve/vnedreidsertificat.png';
 import sqlsertificat from '../../images/achieve/sqlsertificat.png';
 import pythonsertificat from '../../images/achieve/pythonsertificat.png';
 import jquerysertificat from '../../images/achieve/jquerysertificat.png';
@@ -20,24 +21,30 @@ const achieveData = [
     },
     {
         id: 3,
+        title: "Финалист Хакатона ВНЕДРЕЙД",
+        description: "Вышли в финал",
+        image: vnedreidsertificat
+    },
+    {
+        id: 4,
         title: "Пройденный курс",
         description: "Прошёл курс по SQL",
         image: sqlsertificat
     },
     {
-        id: 4,
+        id: 5,
         title: "Пройденный курс",
         description: "Прошёл курс по Python",
         image: pythonsertificat
     },
     {
-        id: 5,
+        id: 6,
         title: "Пройденный курс",
         description: "Прошёл курс по JQuery",
         image: jquerysertificat
     },
     {
-        id: 6,
+        id: 7,
         title: "Пройденный курс",
         description: "Прошёл курс по HTML",
         image: htmlsertificat
