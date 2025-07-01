@@ -1,6 +1,7 @@
 import soglasiesertificat from '../../images/achieve/soglasiesertificat.png';
 import ficsertificat from '../../images/achieve/ficsertificat.png';
 import vnedreidsertificat from '../../images/achieve/vnedreidsertificat.png';
+import nornikelsertificat from '../../images/achieve/nornikelsertificat.png';
 import sqlsertificat from '../../images/achieve/sqlsertificat.png';
 import pythonsertificat from '../../images/achieve/pythonsertificat.png';
 import jquerysertificat from '../../images/achieve/jquerysertificat.png';
@@ -27,24 +28,30 @@ const achieveData = [
     },
     {
         id: 4,
+        title: "Участник Хакатона НОРНИКЕЛЬ",
+        description: "Сертификат участника",
+        image: nornikelsertificat
+    },
+    {
+        id: 5,
         title: "Пройденный курс",
         description: "Прошёл курс по SQL",
         image: sqlsertificat
     },
     {
-        id: 5,
+        id: 6,
         title: "Пройденный курс",
         description: "Прошёл курс по Python",
         image: pythonsertificat
     },
     {
-        id: 6,
+        id: 7,
         title: "Пройденный курс",
         description: "Прошёл курс по JQuery",
         image: jquerysertificat
     },
     {
-        id: 7,
+        id: 8,
         title: "Пройденный курс",
         description: "Прошёл курс по HTML",
         image: htmlsertificat
