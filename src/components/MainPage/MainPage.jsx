@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './MainPage.css';
-import meanIcon from '../../images/stickers/mean.svg';
+// import meanIcon from '../../images/stickers/mean.svg';
+import meanIcon from '../../images/stickers/hero-image-iphone.png';
 
 function MainPage() {
     const fullText = "Привет, я Никита";
